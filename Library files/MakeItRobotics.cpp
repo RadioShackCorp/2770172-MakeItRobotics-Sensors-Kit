@@ -600,7 +600,7 @@ void MakeItRobotics::remote_scan(void)
     irBits++;
     if(irBits==24)
     { 
-      if(irDataLow==50)  //--------->ONES發生
+      if(irDataLow==50)  //--------->ONES
       {
         CirDataHigh=irDataHigh;
         CirDataLow=irDataLow;
@@ -622,7 +622,7 @@ void MakeItRobotics::remote_scan(void)
         else if(even==1)  
         {
           even=0;
-          if(OirDataLow==irDataLow &&  OirDataHigh==irDataHigh )//--------->CONTINUES發生
+          if(OirDataLow==irDataLow &&  OirDataHigh==irDataHigh )//--------->CONTINUES
           {
             CirDataHigh=irDataHigh;
             CirDataLow=irDataLow;
